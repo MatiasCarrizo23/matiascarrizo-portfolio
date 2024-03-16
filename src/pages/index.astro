@@ -3,20 +3,35 @@ import Layout from '../layouts/Layout.astro';
 import LandingHeader from '../components/LandingHeader.astro';
 import HeroSection from '../components/HeroSection.astro';
 import AboutSection from '../components/AboutSection.astro';
+import ExperienceSection from '../components/ExperienceSection.astro';
+import SkillsSection from '../components/SkillsSection.astro';
+import EducationSection from '../components/EducationSection.astro';
+import ContactSection from '../components/ContactSection.astro';
 ---
 
 <Layout title="Matias Carrizo Dev.">
-
 	<LandingHeader/>
 
-	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
-
+	<main
+    	class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+  	>
 		<div class="snap-center">
 			<HeroSection/>
 		</div>
 		<div class="snap-center">
 			<AboutSection/>
 		</div>
-
+		<div class="snap-center">
+			<ExperienceSection/>
+		</div>
+		<div class="snap-center">
+			<SkillsSection/>
+		</div>
+		<div class="snap-center">
+			<EducationSection/>
+		</div>
+		<div class="snap-center">
+			<ContactSection/>
+		</div>
 	</main>
 </Layout>
