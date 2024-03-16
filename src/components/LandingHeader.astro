@@ -1,0 +1,49 @@
+---
+import Logo from '../components/Logo.astro';
+---
+<header 
+
+id="landing-header"
+class="py-5 px-8 flex items-center fixed top-0 w-full justify-between text-white z-40">
+
+    <div class="flex flex-grow basis-0">
+        <Logo/>
+    </div>
+
+    <nav>
+        <ul class="flex text-sm [&>li>a]:text-current [&>li>a]:font-bold [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+            <li><a href="#">Sobre Mí</a></li>
+            <li><a href="#">Experiencia</a></li>
+            <li><a href="#">Estudios</a></li>
+        </ul>
+    </nav>
+
+    <nav class="flex flex-grow justify-end basis-0">
+        <ul class="flex text-sm  [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+            <li><a href="https://www.linkedin.com/in/matias-carrizo-a1467418a/" target="_blank">Matias Carrizo Dev.</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    const headerEl = document.querySelector("#landing-header") as HTMLElement
+
+    const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.9,
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        const { isIntersecting } = entry
+        if (isIntersecting) {
+        const color = entry.target.getAttribute("data-header-color")
+        headerEl.style.color = color
+        }
+    })
+    }, observerOptions)
+
+    const sectionElements = document.querySelectorAll(".landing-section")
+sectionElements.forEach((section) => observer.observe(section))
+</script>
