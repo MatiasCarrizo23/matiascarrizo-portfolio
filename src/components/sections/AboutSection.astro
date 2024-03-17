@@ -1,0 +1,125 @@
+---
+import Github from "../icons/Github.astro"
+import Whatsapp from "../icons/Whatsapp.astro"
+import Instagram from "../icons/Instagram.astro"
+import Linkedin from "../icons/Linkedin.astro"
+import Mail from "../icons/Mail.astro"
+import Pin from "../icons/Pin.astro"
+---
+
+<section 
+    class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
+    data-header-color="black"
+    id="about-me">
+
+        <div class="z-30 relative h-full flex flex-col">
+			<header class="flec flex-col">
+                <div class="info">
+
+                    <h1>Matias Ivan Carrizo</h1>
+                    <figure>
+                        <img src="/Yo.png" alt="Yo">
+                    </figure>
+                    <div class="location">
+                        <h2>Buenos Aires, Argentina</h2>
+                    </div>
+                    
+                    <div class="icons">
+                        <a
+                        class="icon"
+                        href="https://w.app/matiascarrizodev"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Whatsapp />
+                        </a>
+                        <a
+                        class="icon"
+                        href="https://www.instagram.com/matiascarriz0/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Instagram />
+                        </a>
+                        <a
+                        class="icon"
+                        href="mailto:matias2001carrizo2@gmail.com?subject=Mensaje%20Para%20Matias%20Carrizo%20Dev.&body=Hola%20Matias!%20Quiero%20contactarme%20contigo%20porque%20visit%C3%A9%20tu%20portfolio."
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Mail />
+                        </a>
+                        <a
+                        class="icon"
+                        href="https://www.linkedin.com/in/matias-carrizo-a1467418a/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Linkedin />
+                        </a>
+                        <a
+                        class="icon"
+                        href="https://github.com/MatiasCarrizo23"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Github />
+                        </a>
+                    </div>
+                    <h2 class="text-black text-[25px]">
+                        Tengo experiencia como Programador Web Backend gracias a una pasantia que hice mientras estudiaba,
+                        me encuentro motivado y con muchas ganas de aportar mis conocimientos a una empresa y crecer profesionalmente.
+                        Me encantan los desafíos, me gusta ser autodidacta y curioso, ya sea como programador web o en otras areas.
+                        Basicamente me considero una persona polivalente. Como programador backend sentí que estaba en mi lugar,
+                        que es lo que quiero hacer para vivir y avanzar en la vida. Si bien soy Junior, puedo aportar muchisimo a una compania.
+                    </h2>
+                    
+                </div>
+			</header>
+		</div>
+		
+        <div class="absolute top-0 bottom-0 h-full w-full z-20">
+            <img src="/White.jpg" alt="Background" class="h-full w-full object-cover object-center"/>
+        </div>
+
+</section>
+
+<style>
+    h1 {
+        font-size: 2rem;
+        padding-top: 80px;
+        font-style: font-bold;
+    }
+    h2 {
+        padding-top: 5px;
+        font-size: 1.1rem;
+        font-style: font-bold;
+        text-wrap: balance;
+        text-align: justify;
+        margin: auto;
+    }
+    header {
+        max-width: 800px;
+        margin: 0 auto 72px;
+    }
+    figure {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: 240px;
+        width: 240px;
+        margin: auto;
+    }
+    .location {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 2rem;
+    }
+    .pin {
+        height: 50px;
+        width:  50px;
+    }
+    .icons {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 1rem;
+    }
+</style>

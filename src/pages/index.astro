@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import LandingHeader from '../components/LandingHeader.astro';
-import HeroSection from '../components/HeroSection.astro';
-import AboutSection from '../components/AboutSection.astro';
-import ExperienceSection from '../components/ExperienceSection.astro';
-import SkillsSection from '../components/SkillsSection.astro';
-import EducationSection from '../components/EducationSection.astro';
-import ContactSection from '../components/ContactSection.astro';
+import HeroSection from '../components/sections/HeroSection.astro';
+import AboutSection from '../components/sections/AboutSection.astro';
+import ExperienceSection from '../components/sections/ExperienceSection.astro';
+import SkillsSection from '../components/sections/SkillsSection.astro';
+import EducationSection from '../components/sections/EducationSection.astro';
+import ContactSection from '../components/sections/ContactSection.astro';
 ---
 
 <Layout title="Matias Carrizo Dev.">
@@ -30,8 +30,6 @@ import ContactSection from '../components/ContactSection.astro';
 		<div class="snap-center">
 			<EducationSection/>
 		</div>
-		<div class="snap-center">
-			<ContactSection/>
-		</div>
+		
 	</main>
 </Layout>
