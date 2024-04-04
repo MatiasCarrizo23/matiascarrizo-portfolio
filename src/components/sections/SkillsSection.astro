@@ -1,3 +1,7 @@
+---
+import Working from "../icons/Working.astro";
+---
+
 <section 
 
 		class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
@@ -9,7 +13,11 @@
 				<h2 class="text-white pt-32 text-[30px] font-medium py-5">
 					Skills
 				</h2>
+				<a class="icon">
+                    <Working />
+                </a>
 				<p class="text-white text-sm text-[20px] px-10">
+					Esta pagina esta en construcción. Por favor, vuelva más tarde.
 				</p>
 			</header>
 		</div>
@@ -18,3 +26,20 @@
             <img src="/Skills.webp" alt="Background" class="h-full w-full object-cover object-center"/>
         </div>
 </section>
+<style>
+	header {
+		display: flex;
+		align-items: center;
+	}
+	p {
+		margin-top: 10px;
+	}
+    .icon {
+		height: 200px;
+		width: 200px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+		margin-top: 60px;
+    }
+</style>
